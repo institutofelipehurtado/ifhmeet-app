@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidade do IFH Meet</title>
+  <meta name="description" content="Política de Privacidade do IFH Meet, aplicativo interno do Instituto Felipe Hurtado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <div class="faixa">
+      <img src="logo-ifh-branco-laranja.png" alt="Instituto Felipe Hurtado">
+      <nav>
+        <a href="./">Início</a>
+        <a href="privacidade.html">Privacidade</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Política de Privacidade do IFH <span class="destaque">Meet</span></h1>
+    <p class="subtitulo">Última atualização: 28 de outubro de 2026.</p>
+
+    <p>Esta política explica quais dados o IFH Meet usa, para quê, onde eles ficam e como pedir a exclusão. O IFH Meet é um aplicativo de uso interno do Instituto Felipe Hurtado (o "Instituto"), que é o responsável pelos dados tratados nele.</p>
+
+    <h2>1. Quem usa o aplicativo</h2>
+    <p>Só pessoas da equipe do Instituto, com a conta Google cadastrada por ele. Qualquer outra conta é recusada no login.</p>
+
+    <h2>2. Dados da Conta Google</h2>
+    <p>No login, o IFH Meet pede ao Google só as permissões básicas de identificação (<code>openid</code>, e-mail e perfil). Com elas, recebe:</p>
+    <ul>
+      <li>o identificador da conta Google;</li>
+      <li>o endereço de e-mail e a confirmação de que ele foi verificado;</li>
+      <li>o nome e a foto do perfil.</li>
+    </ul>
+    <p>Esses dados servem só para confirmar quem é a pessoa, conferir se a conta está cadastrada e abrir o perfil dela no aplicativo. O IFH Meet não lê e-mails, contatos, arquivos nem a agenda da conta.</p>
+    <p>Se uma função nova precisar de outra permissão do Google (por exemplo, salvar arquivos no Google Drive da pessoa), o aplicativo vai pedir essa permissão à parte, e ela só vale se a pessoa aceitar na tela do Google. Esta política será atualizada antes disso.</p>
+
+    <h2>3. Onde os dados ficam</h2>
+    <ul>
+      <li><strong>No computador da pessoa:</strong> o acesso concedido pelo Google fica guardado cifrado. Ele não é enviado ao servidor do Instituto.</li>
+      <li><strong>No servidor do Instituto:</strong> ficam o identificador da conta, o e-mail, o perfil da pessoa no aplicativo e o registro dos acessos. O banco de dados fica no Supabase, em São Paulo, com cópias diárias cifradas guardadas no Google Drive do Instituto.</li>
+    </ul>
+
+    <h2>4. Conteúdo das reuniões</h2>
+    <p>Quando a pessoa usa o aplicativo numa reunião de trabalho, o áudio é enviado ao serviço de transcrição (OpenAI ou, se configurado, Deepgram), e o texto vai ao serviço de resumo (Anthropic). Quando a chave de acesso a esses serviços é a do Instituto, o envio passa por um repasse na Cloudflare, que não guarda o conteúdo. Esses envios são feitos pelas interfaces de programação (APIs) desses fornecedores, que, pelos termos de uso deles, não usam esses dados para treinar os seus modelos. O resultado é guardado onde a pessoa escolher.</p>
+    <p>Os dados recebidos da Conta Google (item 2) não são enviados a esses serviços.</p>
+
+    <h2>5. Compartilhamento</h2>
+    <p>O Instituto não vende dados, não os usa para publicidade e não compartilha os dados da Conta Google com terceiros. Eles também não são usados para treinar modelos de inteligência artificial.</p>
+    <p>O uso e a transferência, para qualquer outro aplicativo, de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+    <h2>6. Por quanto tempo</h2>
+    <p>Os dados de identificação ficam enquanto a pessoa fizer parte da equipe e usar o aplicativo. Quando ela sai, o perfil é desativado e deixa de dar acesso.</p>
+
+    <h2>7. Segurança</h2>
+    <p>O acesso aos dados é separado por pessoa e por função, e cada acesso fica registrado. As credenciais guardadas no computador e as cópias do banco são cifradas.</p>
+
+    <h2>8. Seus direitos e como revogar o acesso</h2>
+    <p>Pela Lei Geral de Proteção de Dados (LGPD), você pode pedir acesso, correção ou exclusão dos seus dados pelo e-mail abaixo.</p>
+    <p>Você também pode retirar a qualquer momento o acesso do IFH Meet à sua Conta Google em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+    <h2>9. Contato</h2>
+    <p><a href="mailto:gestao@institutofelipehurtado.com.br">gestao@institutofelipehurtado.com.br</a></p>
+  </main>
+
+  <footer>Instituto Felipe Hurtado · IFH Meet</footer>
+</body>
+</html>
