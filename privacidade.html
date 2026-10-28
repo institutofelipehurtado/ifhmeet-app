@@ -47,7 +47,7 @@
     </ul>
 
     <h2>4. Conteúdo das reuniões</h2>
-    <p>Quando a pessoa usa o aplicativo numa reunião de trabalho, o áudio é enviado ao serviço de transcrição (OpenAI ou, se configurado, Deepgram), e o texto vai ao serviço de resumo (Anthropic). Quando a chave de acesso a esses serviços é a do Instituto, o envio passa por um repasse na Cloudflare, que não guarda o conteúdo. Esses envios são feitos pelas interfaces de programação (APIs) desses fornecedores, que, pelos termos de uso deles, não usam esses dados para treinar os seus modelos. O resultado é guardado onde a pessoa escolher.</p>
+    <p>Quando a pessoa usa o aplicativo numa reunião de trabalho, o áudio é enviado ao serviço de transcrição (OpenAI ou, se configurado, Deepgram), e o texto vai ao serviço de resumo (Anthropic). Quando a chave de acesso a esses serviços é a do Instituto, o envio passa por um repasse na Cloudflare, que não guarda o conteúdo. Esses envios são feitos pelas interfaces de programação (APIs) desses fornecedores. Pelos termos de uso da OpenAI e da Anthropic, esses dados não são usados para treinar os modelos delas; na Deepgram, o aplicativo pede em todo envio que os dados fiquem fora do programa de melhoria de modelos. O resultado é guardado onde a pessoa escolher.</p>
     <p>Os dados recebidos da Conta Google (item 2) não são enviados a esses serviços.</p>
 
     <h2>5. Compartilhamento</h2>
