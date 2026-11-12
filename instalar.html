@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instalar o IFH Meet</title>
+  <meta name="description" content="Como instalar o IFH Meet no Windows e no Mac, passo a passo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <div class="faixa">
+      <img src="logo-ifh-branco-laranja.png" alt="Instituto Felipe Hurtado">
+      <nav>
+        <a href="./">Início</a>
+        <a href="instalar.html">Instalar</a>
+        <a href="privacidade.html">Privacidade</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Instalar o IFH <span class="destaque">Meet</span></h1>
+    <p class="subtitulo">Leva uns 5 minutos. Você vai precisar da sua conta Google do Instituto e do código de primeiro acesso que o admin mandou.</p>
+
+    <div class="botoes">
+      <a class="botao" id="baixar-windows" href="https://github.com/institutofelipehurtado/ifhmeet-app/releases/latest">Baixar para Windows</a>
+      <a class="botao secundario" id="baixar-mac" href="https://github.com/institutofelipehurtado/ifhmeet-app/releases">Baixar para Mac</a>
+    </div>
+    <p class="nota" id="versoes">Os botões levam à versão mais recente.</p>
+
+    <h2>1. Baixe o instalador</h2>
+    <p>Use os botões acima. Se preferir, abra a <a href="https://github.com/institutofelipehurtado/ifhmeet-app/releases">página de versões</a> e, em <strong>Assets</strong>, baixe só um arquivo:</p>
+    <ul>
+      <li><strong>Windows:</strong> o que termina em <code>.exe</code> (<code>IFH-Meet-Setup-…exe</code>);</li>
+      <li><strong>Mac:</strong> o que termina em <code>.dmg</code>.</li>
+    </ul>
+    <figure>
+      <img src="guia/baixar.png" width="1185" height="445" alt="Lista de arquivos de uma versão, com o .dmg e o .exe destacados">
+      <figcaption>Os outros arquivos são da atualização automática; não precisa baixar. O número da versão muda com o tempo.</figcaption>
+    </figure>
+
+    <h2>2. Instale</h2>
+    <h3>Windows</h3>
+    <p>Abra o arquivo baixado. A instalação é sozinha e não pede senha de administrador.</p>
+    <div class="caixa">
+      Se aparecer <strong>"O Windows protegeu o computador"</strong>, clique em <strong>Mais informações</strong> e depois em <strong>Executar assim mesmo</strong>. O aviso aparece porque o app é interno e não tem certificado comercial; ele confere a assinatura do Instituto antes de aceitar qualquer atualização.
+    </div>
+    <p>No fim aparece o atalho <strong>IFH Meet</strong> na área de trabalho.</p>
+    <figure class="pequena">
+      <img src="guia/atalho.png" width="128" height="148" alt="Atalho do IFH Meet na área de trabalho">
+    </figure>
+
+    <h3>Mac</h3>
+    <p>Abra o <code>.dmg</code> e arraste o IFH Meet para <strong>Aplicativos</strong>. Na primeira vez, o macOS avisa que não pode verificar o desenvolvedor: abra <strong>Ajustes do Sistema &gt; Privacidade e Segurança</strong> e clique em <strong>Abrir Mesmo Assim</strong>.</p>
+
+    <h2>3. Entre com a sua conta</h2>
+    <ol>
+      <li>Clique em <strong>Entrar com o Google</strong>. O login abre no seu navegador: use a conta Google do Instituto. Outras contas são recusadas.</li>
+      <li>Escolha o seu perfil.</li>
+      <li>No primeiro acesso, digite o <strong>código que o admin mandou</strong> e crie um <strong>PIN</strong> de 6 a 12 dígitos. O PIN é pedido de novo depois de 30 minutos sem usar o computador.</li>
+    </ol>
+    <figure>
+      <img src="guia/tela-inicial.png" width="406" height="562" alt="Tela inicial do IFH Meet com o botão Começar gravação">
+      <figcaption>A tela depois do login. "Chaves de IA" e "Painel do admin" só aparecem para quem é admin.</figcaption>
+    </figure>
+
+    <h2>4. Use no dia a dia</h2>
+    <p>Pode fechar a janela: o IFH Meet fica no ícone perto do relógio (no Windows, às vezes dentro da setinha <strong>^</strong>). Clique nele para abrir.</p>
+    <figure class="media">
+      <img src="guia/icone-relogio.png" width="398" height="322" alt="Ícones perto do relógio do Windows, com o do IFH Meet marcado">
+    </figure>
+    <ul>
+      <li>Para gravar uma reunião: o botão <strong>Começar gravação</strong>, o ícone perto do relógio ou <strong>Ctrl+Alt+Shift+G</strong>. Funciona com qualquer programa de chamada.</li>
+      <li>A transcrição aparece enquanto a reunião acontece; no fim sai um resumo com os pontos principais e os próximos passos.</li>
+      <li>Na primeira vez que for salvar, o app abre o Google no navegador para você autorizar o Drive e escolher a pasta. O resumo e a transcrição vão para lá.</li>
+    </ul>
+
+    <h2>5. Atualizações</h2>
+    <p>No Windows, o app procura versão nova sozinho, baixa e instala quando você fecha o IFH Meet. Ele só instala se a assinatura do Instituto conferir. No Mac, o app avisa quando sai versão nova; é só baixar de novo por esta página.</p>
+
+    <h2>Dúvidas</h2>
+    <p>Fale com a gestão: <a href="mailto:gestao@institutofelipehurtado.com.br">gestao@institutofelipehurtado.com.br</a>.</p>
+  </main>
+
+  <footer>Instituto Felipe Hurtado · IFH Meet</footer>
+
+  <script>
+    // Leva cada botão direto ao instalador da versão mais nova que tem o arquivo daquele sistema.
+    // Sem resposta da API do GitHub, os botões continuam levando à página de versões.
+    (async () => {
+      try {
+        const r = await fetch('https://api.github.com/repos/institutofelipehurtado/ifhmeet-app/releases?per_page=20');
+        if (!r.ok) return;
+        const versoes = (await r.json()).filter((v) => !v.draft && !v.prerelease);
+        const achar = (fim, naoTerminaCom) => {
+          for (const v of versoes) {
+            const a = v.assets.find((x) => x.name.endsWith(fim) && !x.name.endsWith(naoTerminaCom));
+            if (a) return { url: a.browser_download_url, versao: v.tag_name.replace(/^v/, '') };
+          }
+          return null;
+        };
+        const win = achar('.exe', '.blockmap');
+        const mac = achar('.dmg', '.blockmap');
+        const texto = [];
+        if (win) { document.getElementById('baixar-windows').href = win.url; texto.push(`Windows ${win.versao}`); }
+        if (mac) { document.getElementById('baixar-mac').href = mac.url; texto.push(`Mac ${mac.versao}`); }
+        if (texto.length) document.getElementById('versoes').textContent = `Versão mais recente: ${texto.join(' · ')}.`;
+      } catch { /* fica o link da página de versões */ }
+    })();
+  </script>
+</body>
+</html>
